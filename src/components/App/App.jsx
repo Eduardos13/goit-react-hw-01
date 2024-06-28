@@ -1,10 +1,10 @@
-import React from 'react';
-import Profile from '../Profile/Profile';
-import userData from '/src/userData.json';
+import React from "react";
+import Profile from "../Profile/Profile";
+import userData from "/src/userData.json";
 
 const App = () => {
   return (
-    <div className="App">
+    <>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -12,8 +12,8 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-    </div>
+    </>
   );
-}
+};
 
 export default App;
